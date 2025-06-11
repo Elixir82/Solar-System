@@ -34,11 +34,11 @@ An interactive 3D simulation of our solar system, built with **Three.js** and va
     No build tools or server required.
 
 
-🎯 Purpose
-This project was created as part of a frontend assignment to demonstrate understanding of 3D rendering, interactivity, and responsive UI using raw JavaScript.
+## 🎯 Purpose
+   This project was created as part of a frontend assignment to demonstrate understanding of 3D rendering, interactivity, and responsive UI using raw JavaScript.
 
 
-📦 Folder Structure
+## 📦 Folder Structure
   📁 solar-system-threejs
   ├── index.html
   ├── main.js

@@ -3,90 +3,66 @@ body {
   padding: 0;
   overflow: hidden;
   background: #000;
-}
-
-#toggle-btn {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  padding: 8px 14px;
-  background: #111;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 14px;
-  cursor: pointer;
-  z-index: 10;
-}
-
-#toggle-btn:hover {
-  background: #333;
-}
-
-#theme-toggle {
-  position: absolute;
-  top: 10px;
-  left: 100px;
-  padding: 8px 14px;
-  background: #111;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 14px;
-  cursor: pointer;
-  z-index: 10;
-}
-
-#theme-toggle:hover {
-  background: #333;
+  font-family: Arial, sans-serif;
 }
 
 #controls {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  padding: 10px;
-  font-family: sans-serif;
-  font-size: 12px;
-  border-radius: 8px;
-  z-index: 10;
-  max-height: 300px;
-  overflow-y: auto;
-}
-
-.dark-mode#controls {
+  bottom: 20px;
+  left: 20px;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 12px;
   color: white;
-  background: rgba(0, 0, 0, 0.5);
+  max-height: 60vh;
+  overflow-y: auto;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-.light-mode#controls {
-  color: black;
+#controls.light-mode {
   background: rgba(255, 255, 255, 0.8);
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .planet-control {
   margin: 5px 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
 .planet-control label {
-  min-width: 80px;
-  font-weight: bold;
+  display: inline-block;
+  width: 80px;
+  font-size: 12px;
 }
 
-input[type="range"] {
-  width: 100px;
+button {
+  margin: 8px 5px 8px 0;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
 }
 
 #tooltip {
   position: absolute;
-  padding: 8px;
+  display: none;
   background: rgba(0, 0, 0, 0.7);
   color: white;
+  padding: 5px 10px;
   border-radius: 4px;
   pointer-events: none;
-  display: none;
-  z-index: 100;
+  z-index: 1000;
+  font-size: 14px;
 }
